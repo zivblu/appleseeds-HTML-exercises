@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <!-- Headings -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Paragraphs -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Tenetur labore molestiae voluptate nostrum 
+        optio dignissimos cumque libero est ipsum nihil</p>
+
+    <!-- Bold element -->
+    <p><strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Tenetur labore molestiae voluptate nostrum 
+    optio dignissimos cumque libero est ipsum nihil!</strong></p>
+
+    <!-- Italic element -->
+    <p><em> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Tenetur labore molestiae voluptate nostrum 
+        optio dignissimos cumque libero est ipsum nihil!</em></p>
+  
+    <!-- External Links -->
+    <a href="https://xkcd.com/149/" target="_blank"> Click For Sandwich </a><hr>
+    <a href="https://xkcd.com/1770/" target="_blank"> UI Change </a><hr>
+    <a href="https://xkcd.com/1823/" target="_blank"> Hottest Editors </a><hr>
+
+    <!-- Local Image -->
+    <img src="/images/Stimpy.jpg" alt="Stimpy"><hr>
+
+    <!-- Remote Image -->
+    <img src="https://source.unsplash.com/daily
+    " alt="Remote Image"><hr>
+  
+    <!-- Buttons -->
+    <button type="button">Bite Me!</button><hr>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Why Did YOU CLICK????";
+        }
+        </script><hr>
+
+    <!-- Input type -->
+    <p>Choose your gulity pleasure:</p>
+    <div>
+        <input type="checkbox" id="Ice Cream" name="Ice Cream"
+               >
+        <label for="Ice Cream">Ice Cream</label>
+      </div>
+      <div>
+          <input type="checkbox" id="Burger & fries" name="Burger & fries"
+                 >
+          <label for="Burger & fries">Burger & fries</label>
+        </div>
+      <div>
+        <input type="checkbox" id="Meat Taco" name="Meat Taco">
+        <label for="Meat Taco">Meat Taco</label>
+      </div><hr>
+      <p>enter your password:</p>
+
+    <input type="password"><hr>
+
+    <p>Select a music genre:</p>
+
+<div>
+  <input type="radio" id="trance" name="genre" value="trance"
+         >
+  <label for="trance">trance</label>
+</div>
+
+<div>
+  <input type="radio" id="rock" name="genre" value="rock">
+  <label for="rock">rock</label>
+</div>
+
+<div>
+  <input type="radio" id="r&b" name="genre" value="r&b">
+  <label for="r&b">r&b</label>
+</div>
+
+
+
+</body>
+</html>
