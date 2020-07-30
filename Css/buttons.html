@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 550px;
+  margin: 20px auto;
+}
+button{
+  margin: 10px;
+}
+body {
+  background-color:rgb(34, 7, 44);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+} 
+  /* Flat buttons */
+.flat button {
+  border: none;
+  color: white;
+}
+.btn1:hover{
+  color: #f4f4f4;
+  background:hsl(150, 75%, 50%);
+}
+.btn2:hover{
+  color: #f4f4f4;
+  background: hsl(0, 75%, 50%);
+}
+.btn3:hover{
+  color: #f4f4f4;
+  background: hsl(203, 70%, 75%);
+}
+.btn1 {
+  background: springgreen;
+  font-size: 20px;
+  padding: 10px 50px;
+}
+.btn2{
+  background: hsl(0, 100%, 50%);
+  font-size: 15px;
+  padding: 7.5px 50px;
+}
+.btn3{
+  background:lightskyblue;
+  font-size: 10px;
+  padding: 5px 50px;
+}
+h2{
+  color: cyan;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+  /* Round buttons */
+.round button {
+  border: none;
+  color: white;
+  border-radius: 50px;
+}
+.round .btn4:hover{
+  color: #f4f4f4;
+  background: hsl(39, 75%, 50%);
+}
+.round .btn5:hover{
+  color: #f4f4f4;
+  background: hsl(51, 75%, 50%);
+}
+.round .btn6:hover{
+  color: #f4f4f4;
+  background:hsl(0, 0%, 25%);
+}
+.round .btn4 {
+  background: orange;
+  font-size: 20px;
+  padding: 10px 50px;
+}
+.round .btn5{
+  background: gold;
+  font-size: 15px;
+  padding: 7.5px 50px;
+}
+.round .btn6{
+  background:gray;
+  font-size: 10px;
+  padding: 5px 50px;
+}
+  /* Flat Ghost buttons */
+.flatghost button {
+  background: none;
+  color: white;
+}
+.flatghost .btn7:hover{
+  color: #f4f4f4;
+  background: springgreen;
+}
+.flatghost .btn8:hover{
+  color: #f4f4f4;
+  background:red;
+}
+.flatghost .btn9:hover{
+  color: #f4f4f4;
+  background:lightskyblue;
+}
+.flatghost .btn7 {
+  border: 2px solid springgreen;
+  font-size: 20px;
+  padding: 10px 50px;
+}
+.flatghost .btn8{
+  border: 2px solid red;
+  font-size: 15px;
+  padding: 7.5px 50px;
+}
+.flatghost .btn9{
+  border: 2px solid lightskyblue;
+  font-size: 10px;
+  padding: 5px 50px;
+}
+  /* Round Ghost buttons */
+.roundghost button {
+  background: none;
+  color: white;
+  border-radius: 50px;
+}
+.roundghost .btn10:hover{
+  color: #f4f4f4;
+  background: orange;
+}
+.roundghost .btn11:hover{
+  color: #f4f4f4;
+  background:gold;
+}
+.roundghost .btn12:hover{
+  color: #f4f4f4;
+  background:gray;
+}
+.roundghost .btn10 {
+  border: 2px solid orange;
+  font-size: 20px;
+  padding: 10px 50px;
+}
+.roundghost .btn11{
+  border: 2px solid gold;
+  font-size: 15px;
+  padding: 7.5px 50px;
+}
+.roundghost .btn12{
+  border: 2px solid gray;
+  font-size: 10px;
+  padding: 5px 50px;
+}
+
+</style>
+<body>
+<div class="container">
+<div class="flat">
+<h2>Flat</h2><br>
+<button class="btn1">Register</button> 
+<button class="btn2">Clear</button> 
+<button class="btn3">Submit</button>
+</div><br>
+<div class="round">
+<h2>Round</h2><br>
+<button class="btn4">Register</button> 
+<button class="btn5">Clear</button> 
+<button class="btn6">Submit</button>
+</div><br>
+<div class="flatghost">
+<h2>Flat Ghost</h2><br>
+<button class="btn7">Register</button> 
+<button class="btn8">Clear</button> 
+<button class="btn9">Submit</button>
+</div><br>
+<div class="roundghost">
+<h2>Round Ghost</h2><br>
+<button class="btn10">Register</button> 
+<button class="btn11">Clear</button> 
+<button class="btn12">Submit</button>
+</div>
+</div>
+
+</body>
+</html>
