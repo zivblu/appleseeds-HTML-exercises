@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float_Layout</title>
+  <style>
+
+
+
+
+
+
+
+
+
+
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 600px;
+        margin: 30px auto;
+      }
+      .clr {
+        clear: both;
+      }
+      .box1 {
+        background-color: orange;
+        border: 1px solid black;
+        width: 600px;
+        padding-left: 250px;
+        padding-top: 35px;
+        height: 100px;
+        margin-bottom: 5px;
+      }
+      .box2 {
+        background-color: green;
+        border: 1px solid black;
+        height: 300px;
+        padding-left: 10px;
+        padding-top: 20px;
+        float: left;
+        width: 29.5%;
+      }
+      .box3 {
+        background-color: purple;
+        border: 1px solid black;
+        height: 300px;
+        padding-left: 350px;
+        padding-top: 20px;
+        float: right;
+        width: 69.5%;
+      }
+      .box4 {
+        background-color: lightskyblue;
+        border: 1px solid black;
+        width: 600px;
+        height: 100px;
+        padding-left: 250px;
+        padding-top: 35px;
+        margin-top: 5px;
+      }
+
+    @media only screen and (max-width: 1800px) {
+      .box1{
+        background-color: green;
+      }
+      .box2 {
+      width: 25.5%;
+      background-color: lightskyblue;
+      }
+      .box3{
+      width: 73.5%;
+      background-color: orange;
+      }
+      .box4{
+      background-color: purple;
+      }
+}
+    @media only screen and (max-width: 1600px) {
+      .box1{
+        background-color: lightskyblue;
+      }
+      .box2 {
+      width: 21.5%;
+      background-color: purple;
+      }
+      .box3{
+      width: 77.5%;
+      background-color: green;
+      }
+      .box4{
+        background-color: orange;
+      }
+}
+    @media only screen and (max-width: 1400px) {
+      .box1{
+        background-color: purple;
+      }
+      .box2 {
+      width: 17.5%;
+      background-color: orange;
+      }
+      .box3{
+      width: 81.5%;
+      background-color: lightskyblue;
+      }
+      .box4{
+        background-color: green;
+      }
+}
+    @media only screen and (max-width: 1200px) {
+      .box1{
+        background-color: orange;
+      }
+      .box2 {
+      width: 13.5%;
+      background-color: green;
+      }
+      .box3{
+      width: 85.5%;
+      background-color: purple;
+      }
+      .box4{
+        background-color: lightskyblue;
+      }
+}
+    @media only screen and (max-width: 1000px) {
+      .box1{
+        background-color: green;
+      }
+      .box2 {
+      width: 9.5%;
+      background-color: lightskyblue;
+      }
+      .box3{
+      width: 89.5%;
+      background-color: orange;
+      }
+      .box4{
+        background-color: purple;
+      }
+}
+    @media only screen and (max-width: 800px) {
+      .box1{
+        background-color: lightskyblue;
+      }
+      .box2 {
+      width: 5.5%;
+      background-color: purple;
+      }
+      .box3{
+      width: 93.5%;
+      background-color: green;
+      }
+      .box4{
+        background-color: orange;
+      }
+}
+    @media only screen and (max-width: 600px) {
+      .box1{
+        background-color: purple;
+      }
+      .box2 {
+      width: 1.5%;
+      background-color: orange;
+      }
+      .box3{
+      width: 97.5%;
+      background-color: lightskyblue;
+      }
+      .box4{
+        background-color: rgb(54, 207, 54);
+      }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box1">
+      <h3>Header</h3>
+    </div>
+    <div class="box2">
+      <h3>Side</h3>
+    </div>
+    <div class="box3">
+      <h3>Main</h3>
+    </div>
+    <div class="clr"></div>
+    <div class="box4">
+      <h3>Flooter</h3>
+    </div>
+  </div>
+</body>
+
+</html>

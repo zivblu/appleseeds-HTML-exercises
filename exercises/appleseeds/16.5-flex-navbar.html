@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Navbar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif
+    }
+
+    /* X-Small */
+    @media only screen and (max-width: 700px) {
+      .flex-contanier {
+        display: flex;
+        flex-direction: column;
+        background: antiquewhite;
+        align-items: center;
+        border: 2px solid black;
+        padding: 30px;
+      }
+      .flex-contanier .navbar-leftside {
+        margin-bottom: 20px;
+        color: cornflowerblue;
+      }
+      .flex-contanier .navbar-rightside ul {
+        display: flex;
+        justify-content: space-between;
+
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .flex-contanier .navbar-rightside ul li {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (min-width: 701px) {
+      .flex-contanier {
+        display: flex;
+        justify-content: space-between;
+        background: antiquewhite;
+        align-items: center;
+        border: 2px solid black;
+        padding: 20px;
+      }
+
+    }
+
+    .flex-contanier .navbar-rightside {
+      font-size: 20px;
+    }
+
+    .flex-contanier .navbar-rightside ul {
+      display: flex;
+    }
+
+    .flex-contanier .navbar-rightside ul li {
+      list-style: none;
+      margin-left: 20px;
+    }
+
+    .flex-contanier .navbar-rightside ul li a {
+      text-decoration: none;
+    }
+
+    .flex-contanier .navbar-leftside {
+      font-size: 30px;
+      color: cornflowerblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-contanier">
+    <div class="nav navbar-leftside">
+      <span>APPLESEEDS</span>
+    </div>
+    <div class="nav navbar-rightside">
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="Portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

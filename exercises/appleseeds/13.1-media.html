@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Media</title>
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background: gray;
+color: black;
+font-size: 40px;
+text-align: center;
+padding-top: 100px;
+}
+
+h1{
+  display: none;
+}
+
+/* X-Small */
+@media only screen and (max-width: 500px){
+  body{
+    background: pink;
+    font-size: 10px;
+  }
+
+  #x-small h1{
+    display: block;
+  }
+}
+
+/* Small */
+@media (min-width: 501px) and (max-width: 768px){
+  body{
+    background: purple;
+    font-size: 30px;
+
+  }
+
+  #small h1{
+    display: block;
+  }
+}
+
+/* Medium */
+@media (min-width: 769px) and (max-width: 1200px){
+  body{
+    background: gold;
+    font-size: 50px;
+
+  }
+
+  #medium h1{
+    display: block;
+  }
+}
+
+/* Large */
+@media (min-width: 1201px) and (max-width: 1450px){
+  body{
+    background: brown;
+    font-size: 90px;
+  }
+
+  #large h1{
+    display: block;
+  }
+}
+
+/* X-Large */
+@media (min-width: 1451px){
+  body{
+    background: red;
+    font-size: 130px;
+  }
+
+  #x-large h1{
+    display: block;
+  }
+}
+</style>
+</head>
+
+<body>
+  <div id="x-small"><h1>X-Small</h1></div>
+  <div id="small"><h1>Small</h1></div>
+  <div id="medium"><h1>Medium</h1></div>
+  <div id="large"><h1>Large</h1></div>
+  <div id="x-large"><h1>X-Large</h1></div>
+</body>
+</html>

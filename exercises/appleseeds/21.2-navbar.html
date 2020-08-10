@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navbar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #ADB201;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+    }
+
+    .navbar {
+      font-size: 40px;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar ul li {
+      display: block;
+      margin: 50px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .navbar ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-top: 2px solid black;
+      transform: translateX(-100%);
+      transition: transform 1s;
+    }
+
+    .navbar ul li::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      border-bottom: 2px solid black;
+      transform: translateX(100%);
+      transition: transform 1s;
+    }
+
+    .navbar ul li:hover::before {
+      transition: 1s;
+      transform: translateX(0);
+    }
+
+    .navbar ul li:hover::after {
+      transition: 1s;
+      transform: translateX(0);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Protfolio</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+</body>
+
+</html>

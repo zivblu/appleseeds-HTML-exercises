@@ -1,16 +1,36 @@
 /* Reset */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Fonts */
+
+@font-face {
+	font-family: 'GothamMedium';
+  src: local('Gotham Medium'), local('Gotham Medium'), url('fonts/Gotham\ Medium.otf') format('truetype');
+ } 
+
+ @font-face{
+  font-family: 'GothamBook';
+  src: local('Gotham Book'), local('Gotham Book'), url('fonts/Gotham\ Book.otf') format('truetype');
+ }
+
+ @font-face{
+  font-family: 'GothamLight';
+  src: local('Gotham Light'), local('Gotham Light'), url('fonts/Gotham\ Light.otf') format('truetype');
+}
+
+@font-face{
+  font-family: 'GothamBold';
+	src: local('Gotham Bold'), local('Gotham Bold'), url('fonts/Gotham\ Bold.otf') format('truetype');
+}
+
+
 /* Main styling */
 html, body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  /* line-height: 1.7em; */
-  background: url("../img/model-3.jpg") no-repeat;
-  background-size: cover;
 }
 
 a {
@@ -22,117 +42,154 @@ h1,h2,h3 {
   padding-bottom: 20px;
 }
 
-/* Utility Classes */
+/* Pages */
 
-/* Navbar */
-#navbar {
+.first-page {
+  height: 100vh;
+  background: url("../img/model-3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.seconed-page {
+  height: 100vh;
+}
+
+.third-page {
+  height: 100vh;
+}
+
+.forth-page {
+  height: 100vh;
+}
+
+/* first-page Utility Classes */
+#first-page-navbar {
   color: #fff;
   overflow: auto;
 }
-#navbar img{
-  width: 140px;
-  height: 20px;
+
+#first-page-navbar img {
+  width: 90px;
+  height: 10px;
   position: absolute;
   top: 20px;
-  left: 10px;
-  
-}
-#navbar p{
-  font-size: 40px;
-  position: absolute;
-  top: 270px;
-  left: 850px;
+  left: 20px;
+  filter: invert(100%);
 }
 
-#navbar a {
+#first-page-navbar p {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size: 40px;
+  position: absolute;
+  top: 140px;
+  left: 873px;
+}
+
+#first-page-navbar a {
   color: #fff;
 }
 
-#navbar h1 {
+#first-page-navbar h1 {
+  font-family: 'GothamMedium', Arial, sans-serif;
   float: left;
   padding-top: 10px;
 }
 
-#navbar .navbar-center ul {
+#first-page-navbar .first-page-navbar-center ul {
   list-style: none;
-  margin-left: 600px;
+  margin-left: 650px;
 }
 
-#navbar .navbar-center ul li {
+#first-page-navbar .first-page-navbar-center ul li {
   float: left;
 }
 
-#navbar .navbar-center ul li a {
+#first-page-navbar .first-page-navbar-center ul li a {
+  font-family: 'GothamMedium', Arial, sans-serif;
   display: block;
   padding: 20px 10px;
-  font-size: 20px;
-  
+  font-size: 17px; 
 }
-#navbar .navbar-right ul {
+
+#first-page-navbar .first-page-navbar-right ul {
   list-style: none;
   position: relative;
   right: 20px;
 
 }
 
-#navbar .navbar-right ul li a {
+#first-page-navbar .first-page-navbar-right ul li a {
+  font-family: 'GothamMedium', Arial, sans-serif;
   display: block;
   padding: 20px 10px;
-  font-size: 20px;
+  font-size: 17px;
   float: right;
-  margin-right: 30px; 
+  margin-right: 9px; 
 }
 
-#navbar-down ul {
+#first-page-navbar-down ul {
   list-style-type: none;
-  width: 200px;
+  width: 300px;
   position: absolute;
-  top: 250px;
+  top: 300px;
+  left: 13px;
   background-color: 0;
 }
 
-#navbar-down li a {
+#first-page-navbar-down li a {
+  font-family: 'GothamBook', Arial, sans-serif;
   display: block;
   color: transparent;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 12px;
 }
 
-#navbar-down li .not-working {
+#first-page-navbar-down li .first-page-not-working {
   color: gray;
   margin-left: 2px;
+  font-size: 25px;
 }
 
-#navbar-down li span {
+#first-page-navbar-down li span {
+  font-size: 30px;
   color: white;
   margin-left: 2px;
   text-decoration: none;
 }
 
-#navbar-down li a:hover:not(.active) {
+#first-page-navbar-down li a:hover:not(.active) {
   color: white;
 }
 
-.first-line{
+.first-page-first-line {
+  font-family: 'GothamBook', Arial, sans-serif;
   color: white;
-  font-size:22px;
+  font-size:15px;
   position: absolute;
-  bottom: 70px;
-  left: 720px;
+  text-align: center;
+  bottom: 100px;
+  left: 640px; 
 }
 
-.first-line span{
+.first-page-first-line span {
+  font-family: 'GothamMedium', Arial, sans-serif;
   color: white;
-  font-size:40px;
-
+  font-size:33px;
 }
 
-.second-line {
+.first-page-first-line img{
+  width: 45px;
+  height: 30px;
+}
+
+.first-page-second-line {
+  font-family: 'GothamBook', Arial, sans-serif;
   color: white;
-  font-size:22px;
+  font-size:15px;
   position: absolute;
-  bottom: 70px;
-  left: 880px;
+  bottom: 100px;
+  left: 790px;
   text-align: center;
   border-left: 2px solid #fff;
   border-right: 2px solid #fff;
@@ -140,47 +197,52 @@ h1,h2,h3 {
   padding-right: 30px;
 
 }
-.second-line span{
+.first-page-second-line span {
+  font-family: 'GothamMedium', Arial, sans-serif;
   color: white;
-  font-size:40px;
+  font-size:33px;
 }
 
-.third-line {
+.first-page-third-line {
+  font-family: 'GothamBook', Arial, sans-serif;
   color: white;
-  font-size:20px;
+  font-size:15px;
   position: absolute;
-  bottom: 70px;
-  left: 1100px;
+  bottom: 100px;
+  left: 1000px;
   text-align: center;
+  
 }
 
-.third-line span {
+.first-page-third-line span {
+  font-family: 'GothamMedium', Arial, sans-serif;
   color: white;
-  font-size:40px;
+  font-size:33px;
 }
 
-.btn11 {
+.first-page-btn {
+  font-family: 'GothamMedium', Arial, sans-serif;
   color: white;
   position: absolute;
-  bottom: 85px;
-  left: 1230px;
+  bottom: 98px;
+  left: 1130px;
   text-align: center;
-  border: 4px solid white;
-  font-size: 15px;
-  padding: 7.5px 50px;
+  border: 3px solid white;
+  font-size: 12px;
+  padding: 10px 40px;
   background: none;
   color: white;
-  border-radius: 50px;
-
+  border-radius: 45px;
+  cursor: pointer;
 }
 
-.btn11:hover {
+.first-page-btn:hover {
   color: black;
   background:white;
   cursor: pointer;
 }
 
-
+/* Hamburger Menu */
 
 #menuToggle {
   display: block;
@@ -194,22 +256,18 @@ h1,h2,h3 {
   user-select: none;
 }
 
-#menuToggle a
-{
+#menuToggle a {
   text-decoration: none;
   color: #232323;
   
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
-{
+#menuToggle a:hover {
   color: tomato;
 }
 
-
-#menuToggle input
-{
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
@@ -225,83 +283,754 @@ h1,h2,h3 {
   -webkit-touch-callout: none;
 }
 
-
-#menuToggle span
-{
+#menuToggle span {
   display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
+  width: 18px;
+  height: 2px;
+  margin-bottom: 4px;
   position: relative;
-  
   background: white;
   border-radius: 3px;
-  
   z-index: 1;
-  
   transform-origin: 4px 0px;
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu{
-  position: absolute;
+#menu {
+  position: fixed;
   width: 300px;
   margin: -47px 0 0 -250px;
   padding: 20px;
   padding-top: 50px;
   padding-bottom: unset;
-  
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li{
+#menu li {
   padding: 10px 0;
   font-size: 22px;
 }
 
-#menuToggle input:checked ~ ul{
+#menuToggle input:checked ~ ul {
   transform:none;
 }
 
-.newPage {
-  height: 100vh;
+/* seconedPage Utility Classes */
+
+#saftey-info img {
+  width: 90px;
+  height: 10px;
+  position: absolute;
+  top: 990px;
+  left: 10px;
+}
+
+#saftey-info .seconed-page-saftey-info {
+  float: left;
+  width: 22%;
+  height: 100%;
+  text-align: left;
+  padding: 20px 50px;
+  overflow: hidden;
+}
+
+.seconed-page .seconed-page-saftey-img {
+  background: url('../img/model-3-hero.png') no-repeat;
+  background: url('../img/model-3-hero.png') no-repeat,
+  linear-gradient(90deg, rgb(244, 244, 244), rgb(255, 255, 255));
+  background-size: 78%;
+  background-position: 415px;
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+
+.seconed-page .seconed-page-saftey-img .seconed-page-a{
+  font-family: 'GothamMedium', Arial, sans-serif;
+  color: #5F6266;
+  font-size: 19px;
+  height: 340px;
+  position: absolute;
+  left: 983px;
+  top: 1100px;
+  text-align: left;
+  border-left: 2px solid black;
+  padding-left: 1px;
+  padding-right: 1px
+}
+
+.seconed-page .seconed-page-saftey-img .seconed-page-b{
+  font-family: 'GothamMedium', Arial, sans-serif;
+  color: #5F6266;
+  font-size: 19px;
+  height: 230px;
+  position: absolute;
+  left: 1293px;
+  top: 1000px;
+  text-align: left;
+  border-left: 2px solid black;
+  padding-left: 1px;
+  padding-right: 1px
+}
+
+.seconed-page .seconed-page-saftey-img .seconed-page-c{
+  font-family: 'GothamMedium', Arial, sans-serif;
+  color: #5F6266;
+  font-size: 19px;
+  height: 190px;
+  position: absolute;
+  left: 1343px;
+  top: 1500px;
+  display: flex;
+  align-items: flex-end;
+  border-left: 2px solid black;
+  padding-left: 1px;
+  padding-right: 1px
+}
+
+#saftey-info .seconed-page-saftey-info span {
+  font-family: 'GothamLight', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#saftey-info .seconed-page-saftey-info h2 {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size: 30px;
+}
+
+#saftey-info .seconed-page-saftey-info p {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.seconed-page #seconed-page-navbar-down ul {
+  list-style-type: none;
+  position: absolute;
+  left: 13px;
+  top: 1250px;
+  background-color: 0;
+}
+
+.seconed-page #seconed-page-navbar-down li a {
+  font-family: 'GothamBook', Arial, sans-serif;
+  display: block;
+  color: transparent;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.seconed-page #seconed-page-navbar-down li .seconed-page-not-working {
+  color: gray;
+  font-size: 25px;
+}
+
+.seconed-page #seconed-page-navbar-down .seconed-page-working {
+  font-weight: bold;
+}
+
+.seconed-page #seconed-page-navbar-down li span {
+  font-size: 30px;
+  color: black; 
+}
+
+.seconed-page #seconed-page-navbar-down li a:hover:not(.active) {
+  color: black;
+}
+
+.seconed-page-rating-square {
+  color: #393C41;
+  position: absolute;
+  top: 1285px;
+  left: 50px;
+  height: 307px;
+  width: 315px;
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  padding-left: 25px;
+  padding-right: 27px;
+}
+
+.seconed-page-rating-square .seconed-page-head {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.seconed-page-rating-square .seconed-page-line1 {
+  font-family: 'GothamBold', Arial, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  line-height: 40%;
+}
+
+.seconed-page-rating-square .seconed-page-line1 .seconed-page-line2 {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 8px;
+  text-align: left;
+}
+
+.seconed-page-rating-square .seconed-page-line1 span {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 15px;
+  margin-left: 110px;
+  padding: 9px;
+}
+
+.seconed-page-rating-square .seconed-page-line3 {
+  font-family: 'GothamBold', Arial, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  line-height: 40%;
+}
+
+.seconed-page-rating-square .seconed-page-line3 .seconed-page-line2 {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 8px;
+  text-align: left;
+}
+
+.seconed-page-rating-square .seconed-page-line3 span {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 15px;
+  margin-left: 77px;
+  padding: 9px;
+}
+
+.seconed-page-rating-square .seconed-page-line4 {
+  font-family: 'GothamBold', Arial, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  line-height: 40%;
+}
+
+.seconed-page-rating-square .seconed-page-line4 .seconed-page-line2 {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 8px;
+  text-align: left;
+}
+
+.seconed-page-rating-square .seconed-page-line4 span {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 15px;
+  margin-left: 77px;
+  padding: 9px;
+}
+
+.seconed-page-rating-square .seconed-page-line5 {
+  font-family: 'GothamBold', Arial, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  line-height: 40%;
+}
+
+.seconed-page-rating-square .seconed-page-line5 .seconed-page-line2 {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 8px;
+  text-align: left;
+}
+
+.seconed-page-rating-square .seconed-page-line5 span {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 15px;
+  margin-left: 81px;
+  padding: 9px;
+}
+
+.seconed-page-rating-square .seconed-page-line6 {
+  font-family: 'GothamBold', Arial, sans-serif;
+  font-size: 15px;
+  text-align: left;
+  line-height: 0px;
+}
+
+.seconed-page-rating-square .seconed-page-line6 span {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 15px;
+  margin-left: 92px;
+  padding: 9px;
+}
+
+#saftey-info .seconed-page-btn1 {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  color: black;
+  position: relative;
+  top: 220px;
+  left: 130px;
+  text-align: center;
+  border: 3px solid black;
+  font-size: 13px;
+  padding: 10px 40px;
+  background: none;
+  color: black;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+#saftey-info  .seconed-page-btn1:hover {
+  color: white;
+  background:black;
+}
+
+#saftey-info .seconed-page-btn {
+  font-family: 'GothamBook', Arial, sans-serif;
+  color: black;
+  position: relative;
+  top: 265px;
+  left: -30px;
+  text-align: center;
+  border: 3px solid black;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 5px 12px;
+  background: none;
+  color: black;
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+#saftey-info  .seconed-page-btn:hover {
+  color: white;
+  background:black;
+}
+
+#saftey-info .seconed-page-order-now span {
+  font-family: 'GothamBook', Arial, sans-serif;
+  color: black;
+  position: relative;
+  font-size: 13px;
+  top: 260px;
+  left: -20px;
+}
+
+/* third-page Utility Classes */
+
+.third-page .third-page-logo img {
+  width: 90px;
+  height: 10px;
+  position: absolute;
+  top: 1958px;
+  left: 12px;
+}
+
+video {
+  object-fit: fill;
+}
+
+.third-page .third-page-first-line {
+  font-family: 'GothamBook', Arial, sans-serif;
+  color: white;
+  font-size:12px;
+  line-height: 18px;
+  font-weight: 400;
+  position: absolute;
+  text-align: left;
+  top: 2510px;
+  left: 470px; 
+}
+
+.third-page .third-page-first-line span {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size:28px;
+  line-height: 36px;
+  font-weight: 500;
+  color: white;
+  
+}
+
+.third-page .third-page-first-line img {
+  width: 45px;
+  height: 30px;
+}
+
+.third-page .third-page-second-line {
+  font-family: 'GothamBook', Arial, sans-serif;
+  color: white;
+  font-size:12px;
+  position: absolute;
+  top: 2510px;
+  left: 790px;
+  text-align: left;
+  line-height: 18px;
+  font-weight: 400;
+  height: 90px;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  padding-left: 22px;
+  padding-right: 25px;
+}
+
+.third-page .third-page-second-line span {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size:28px;
+  line-height: 36px;
+  font-weight: 500;
+  color: white;
+  
+}
+
+.third-page .third-page-third-line {
+  font-family: 'GothamBook', Arial, sans-serif;
+  color: white;
+  font-size:12px;
+  position: absolute;
+  line-height: 18px;
+  font-weight: 400;
+  top: 2510px;
+  left: 1137px;
+  text-align: left;
+}
+
+.third-page .third-page-third-line span {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size:28px;
+  line-height: 36px;
+  font-weight: 500;
+  color: white;
+  
+}
+
+.third-page #third-page-navbar-down ul {
+  list-style-type: none;
+  position: relative;
+  left: 13px;
+  bottom: 610px;
+  background-color: 0;
+  height: 0px;
+  width: 400px;
+}
+
+.third-page #third-page-navbar-down li a {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  color: transparent;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.third-page #third-page-navbar-down li .third-page-not-working {
+  color: gray;
+  font-size: 25px;
+}
+
+.third-page #third-page-navbar-down .third-page-working {
+  font-weight: bold;
+}
+
+.third-page #third-page-navbar-down li span {
+  font-size: 30px;
+  color: white; 
+}
+
+.third-page #third-page-navbar-down li a:hover:not(.active) {
+  color: white;
+}
+
+.third-page .third-page-order-now .third-page-info {
+  font-family: 'GothamLight', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 500;
+  position: relative;
+  top: 50px;
+  left: 465px;
+  font-size: 20px;
+  width: 600px;
+}
+
+.third-page .third-page-order-now .third-page-info span {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  position: inherit;
+  top: 1px;
+  left: 0px;
+  font-size: 30px;
+}
+
+.third-page .third-page-btn1 {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: black;
+  position: relative;
+  top: 62px;
+  left: 485px;
+  text-align: center;
+  border: 3px solid black;
+  padding: 9px 32px;
+  background: none;
+  color: black;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.third-page .third-page-btn1:hover {
+  color: white;
+  background:black;
+  cursor: pointer;
+}
+
+.third-page .third-page-btn {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 22px;
+  line-height: 21px;
+  font-weight: 400;
+  color: black;
+  position: relative;
+  top: 66px;
+  left: 465px;
+  text-align: center;
+  border: 3px solid black;
+  font-weight: bold;
+  padding: 5px 9px;
+  background: none;
+  color: black;
+  border-radius: 90px;
+  cursor: pointer;
+}
+
+.third-page  .third-page-btn:hover {
+  color: white;
+  background:black;
+  cursor: pointer;
+}
+
+.third-page .third-page-order-now span {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  color: black;
+  position: relative;
+  top: 65px;
+  left: 475px;
+}
+.third-page .third-page-order-now .third-page-order-now-info {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  position: relative;
+  bottom: 50px;
+  left: 816px;
+  text-align: left;
+  width: 600px;
+}
+
+/* forth-page Utility Classes */
+
+.forth-page .forth-page-cover {
+  width:1903px; 
+  height:718px;
+  object-fit: cover;
+}
+
+.forth-page .forth-page-logo img {
+  width: 90px;
+  height: 10px;
+  position: absolute;
+  top: 2930px;
+  left: 12px;
+}
+
+.forth-page .forth-page-first-line {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  text-align: left;
+  top: 3480px;
+  left: 470px; 
+}
+
+.forth-page .forth-page-first-line span {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  color: white;
+}
+
+.forth-page .forth-page-second-line {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: white;
+  height: 90px;
+  position: absolute;
+  top: 3480px;
+  left: 790px;
+  text-align: left;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  padding-left: 22px;
+  padding-right: 30px;
+}
+
+.forth-page .forth-page-second-line span {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  color: white;
+}
+
+.forth-page .forth-page-third-line {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  top: 3470px;
+  left: 1137px;
+  text-align: left;
+}
+
+.forth-page .forth-page-third-line span {
+  color: white;
+  font-size:33px;
+}
+
+.forth-page .forth-page-third-line img {
+  width: 50px;
+  height: 40px;
+  filter: invert(100%);
+}
+
+.forth-page #forth-page-navbar-down ul {
+  list-style-type: none;
+  position: relative;
+  left: 13px;
+  bottom: 610px;
+  background-color: 0;
+  height: 0px;
+  width: 400px;
+}
+
+.forth-page #forth-page-navbar-down li a {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  color: transparent;
+  text-decoration: none;
+}
+
+.forth-page #forth-page-navbar-down li .forth-page-not-working {
+  color: gray;
+  font-size: 25px;
+}
+
+.forth-page #forth-page-navbar-down .forth-page-working {
+  font-weight: bold;
+}
+
+.forth-page #forth-page-navbar-down li span {
+  font-size: 30px;
+  color: black; 
+}
+
+.forth-page #forth-page-navbar-down li a:hover:not(.active) {
+  color: black; 
+}
+
+.forth-page .forth-page-order-now .forth-page-info {
+  font-family: 'GothamLight', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 500;
+  position: relative;
+  top: 50px;
+  left: 465px;
+  width: 600px;
+}
+
+.forth-page .forth-page-order-now .forth-page-info span {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+  position: inherit;
+  top: 1px;
+  left: 0px;
+}
+
+.forth-page .forth-page-btn {
+  font-family: 'GothamMedium', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: black;
+  position: relative;
+  top: 62px;
+  left: 485px;
+  text-align: center;
+  border: 3px solid black;
+  padding: 9px 32px;
+  background: none;
+  color: black;
+  border-radius: 45px;
+}
+
+.forth-page .forth-page-btn:hover {
+  color: white;
+  background:black;
+  cursor: pointer;
+}
+
+.forth-page .forth-page-order-now .forth-page-order-now-info {
+  font-family: 'GothamBook', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  position: relative;
+  bottom: 50px;
+  left: 816px;
+  text-align: left;
+  width: 600px;
 }

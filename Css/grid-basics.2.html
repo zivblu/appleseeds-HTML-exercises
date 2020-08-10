@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    .grid {
+
+      display: grid;
+      grid-template-areas: 'header header header ' 'sidebar-left content sideber-right' 'footer footer footer';
+      grid-gap: 1rem;
+    }
+
+    .item {
+      padding: 3rem;
+      border: black 3px solid;
+      color: white;
+      background: #f4f4f4;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: left;
+      border-radius: 30px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: red;
+    }
+
+    .sidebar-left {
+      grid-area: sidebar-left;
+      background-color: blue;
+    }
+
+    .content {
+      grid-area: content;
+      background-color: green;
+    }
+
+    .sideber-right {
+      grid-area: sideber-right;
+      background-color: purple;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: yellow;
+    }
+
+    /* Tablet */
+
+    @media(max-width: 768px) {
+      .grid {
+        grid-template-areas: 'header header header' 'sidebar-left content content' 'sideber-right sideber-right sideber-right' 'footer footer footer';
+      }
+    }
+
+    /* Phone */
+
+    @media(max-width: 500px) {
+      .grid {
+        grid-template-areas: 'header' 'sidebar-left' 'content' 'sideber-right' 'footer';
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="grid">
+    <div class="item header">Header</div>
+    <div class="item sidebar-left">Sideber</div>
+    <div class="item content">Content More content than we had before sothis column in now quite tall</div>
+    <div class="item sideber-right">Sideber 2</div>
+    <div class="item footer">Footer </div>
+  </div>
+</body>
+
+</html>

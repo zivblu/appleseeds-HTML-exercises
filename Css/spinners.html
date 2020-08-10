@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: black;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .dots{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .circle{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .spin1 {
+      width: 200px;
+      height: 200px;
+      border: 2px solid gray;
+      border-radius: 50%;
+      animation: animate1 1.5s infinite linear;
+    }
+
+
+    .spin2 {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border-top: 10px solid teal;
+      border-right: 10px solid transparent;
+      animation: animate2 1s infinite linear;
+    }
+
+
+    .dot1 {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: gray;
+      box-shadow: -24px 0 gray, 24px 0 gray;
+      animation: animate3 1s linear infinite;
+    }
+
+    .dot3 {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: gray;
+      color: teal;
+      box-shadow: -24px 0, 24px 0;
+      box-sizing: border-box;
+      animation: animate5 2s ease-in-out infinite;
+    }
+
+    .dot4 {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      color: #FFF;
+      box-sizing: border-box;
+      animation: animate6 2s linear infinite;
+    }
+
+    @keyframes animate1 {
+      0% {
+        border-top: 10px solid teal;
+
+        transform: rotate(0deg);
+      }
+      100% {
+
+        border-top: 10px solid teal;
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes animate2 {
+      0% {
+        border-top: 5px solid teal;
+
+        transform: rotate(0deg);
+      }
+      100% {
+
+        border-top: 5px solid teal;
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes animate3 {
+      33% {
+        background: gray;
+        box-shadow: -24px 0 teal, 24px 0 gray;
+      }
+      66% {
+        background: teal;
+        box-shadow: -24px 0 gray, 24px 0 gray;
+      }
+      100% {
+        background: gray;
+        box-shadow: -24px 0 gray, 24px 0 teal;
+      }
+    }
+
+    @keyframes animate5 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes animate6 {
+      0% {
+        box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+      }
+      25% {
+        color: rgb(188, 241, 241);
+        box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 2px;
+      }
+      50% {
+        color: rgb(118, 187, 187);
+        box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 2px, -38px 0 0 -2px;
+      }
+      75% {
+        color: rgb(62, 138, 138);
+        box-shadow: 14px 0 0 2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+      }
+      100% {
+        color: rgb(0, 100, 100);
+        box-shadow: 14px 0 0 -2px, 38px 0 0 2px, -14px 0 0 -2px, -38px 0 0 -2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="dots">
+  <span class="dot1"></span>
+  <span class=" dot3"></span>
+  <span class=" dot4"></span>
+</section>
+
+<section class="circle">
+  <span class="spin spin1"></span>
+  <span class="spin spin2"></span>
+</section>
+</body>
+
+</html>

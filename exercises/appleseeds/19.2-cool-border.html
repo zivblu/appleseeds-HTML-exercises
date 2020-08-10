@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: black;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .border {
+      color: white;
+      font-size: 60px;
+    }
+
+    .a {
+      position: relative;
+      width: 600px;
+      height: 200px;
+      background: black;
+    }
+
+    .a:before {
+      content: "";
+      border-left: 5px solid red;
+      border-top: 5px solid red;
+      padding-right: 100px;
+      padding-top: 100px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    .a:after {
+      content: "";
+      border-right: 5px solid red;
+      border-top: 5px solid red;
+      padding-left: 100px;
+      padding-top: 100px;
+      position: absolute;
+      top: 0px;
+      left: 500px;
+    }
+
+    .b {
+      position: relative;
+      width: 600px;
+      height: 200px;
+      background: black;
+    }
+
+    .b:before {
+      content: "";
+      border-right: 5px solid red;
+      border-bottom: 5px solid red;
+      padding-left: 100px;
+      padding-top: 100px;
+      position: absolute;
+      bottom: 0px;
+      left: 500px;
+    }
+
+    .b:after {
+      content: "";
+      border-left: 5px solid red;
+      border-bottom: 5px solid red;
+      padding-right: 100px;
+      padding-top: 100px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="a"></div>
+  <span class="border">Cool Border</span>
+  <div class="b"></div>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 1rem;
+    }
+
+    .item {
+      padding: 3rem;
+      border: black 3px solid;
+      background: #f4f4f4;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 30px;
+    }
+
+    .item:first-child{
+      grid-column: 1 / span 8;
+      background-color: red;
+    }
+
+    .item:nth-child(2) {
+      grid-column: 1 / span 1;
+      grid-row:  2 / span 2;
+      background-color: blue;
+    }
+
+    .item:nth-child(3) {
+      grid-column: 2 / span 4;
+      grid-row:  2 / span 2;
+      background-color: green;
+    }
+
+    .item:nth-child(4) {
+      grid-column: 7 / span 1;
+      grid-row:  2 / span 2;
+      background-color: purple;
+    }
+
+    .item:nth-child(5) {
+      grid-column: 1 / span 8;
+      background-color: yellow;
+    }
+
+    /* X-Small */
+@media only screen and (max-width: 500px){
+  body{
+    background: pink;
+    font-size: 10px;
+  }
+
+  #x-small h1{
+    display: block;
+  }
+}
+
+/* Small */
+@media (min-width: 501px) and (max-width: 768px){
+  body{
+    background: purple;
+    font-size: 30px;
+
+  }
+
+  #small h1{
+    display: block;
+  }
+}
+
+/* Medium */
+@media (min-width: 769px) and (max-width: 1200px){
+  body{
+    background: gold;
+    font-size: 50px;
+
+  }
+
+  #medium h1{
+    display: block;
+  }
+}
+
+/* Large */
+@media (min-width: 1201px) and (max-width: 1450px){
+  body{
+    background: brown;
+    font-size: 90px;
+  }
+
+  #large h1{
+    display: block;
+  }
+}
+
+/* X-Large */
+@media (min-width: 1451px){
+  body{
+    background: red;
+    font-size: 130px;
+  }
+
+  #x-large h1{
+    display: block;
+  }
+}
+  </style>
+</head>
+
+
+<body>
+  <div class="grid">
+    <div class="item">Header</div>
+    <div class="item">Sideber</div>
+    <div class="item">Content More content than we had before sothis column in now quite tall</div>
+    <div class="item">Sideber 2</div>
+    <div class="item">Footer </div>
+  </div>
+</body>
+
+</html>
